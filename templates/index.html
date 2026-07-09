@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERITAS AI ULTRA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <header class="topbar">
+        <a class="brand" href="/">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                </svg>
+            </span>
+            <span class="brand-text">VERITAS AI<span class="brand-accent">ULTRA</span></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="/">Home</a>
+            <a href="#features">Features</a>
+            <a href="#detection" class="active">Detection</a>
+            <a href="#how">How It Works</a>
+            <a href="#tech">AI Technology</a>
+            <a href="#research">Research</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="topbar-actions">
+            <button type="button" class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="ic-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                </svg>
+                <svg class="ic-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.18c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.41.36.78 1.07.78 2.17v3.22c0 .31.21.67.8.56C20.22 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+            <a class="btn-primary btn-cta" href="#detection">
+                <span>Get Started</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="page" id="detection">
+        <section class="hero">
+            <p class="eyebrow">FORENSIC ANALYZER</p>
+            <h1 class="hero-title">Interactive AI Analysis Lab</h1>
+            <p class="hero-sub">Paste a target article or upload a media file. Our neural pipeline runs multi-source verification, semantic matching, and credibility scoring in real time.</p>
+        </section>
+
+        <section class="detection-card" aria-label="Detection tools">
+            <div class="tab-bar" role="tablist">
+                <button type="button" class="tab active" role="tab" aria-selected="true" data-tab="text">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <path d="M14 2v6h6M9 13h6M9 17h6"/>
+                    </svg>
+                    <span>Text Detection</span>
+                </button>
+                <button type="button" class="tab" role="tab" aria-selected="false" data-tab="image">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <path d="m21 15-5-5L5 21"/>
+                    </svg>
+                    <span>Image Detection</span>
+                </button>
+            </div>
+
+            <div class="tab-panel active" id="panel-text" role="tabpanel">
+                <form method="post" action="/verify" class="text-form" id="textForm">
+                    <div class="textarea-wrap">
+                        <textarea
+                            id="newsInput"
+                            name="news"
+                            maxlength="5000"
+                            rows="9"
+                            placeholder="Paste a news article, social media post, or sensitive statement here to audit (min 10 characters)...">{{ news or '' }}</textarea>
+                        <div class="textarea-meta">
+                            <span id="charCount">0/5000</span>
+                            <span class="meta-sep">Characters</span>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-ghost" id="clearBtn">Clear</button>
+                        <button type="submit" class="btn-primary">
+                            <span>Analyze Text</span>
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tab-panel" id="panel-image" role="tabpanel" hidden>
+                <form class="text-form" id="imageForm" method="post" action="/verify_image" enctype="multipart/form-data">
+                    <div class="textarea-wrap">
+                        <label class="dropzone" for="imageInput" id="dropzone">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <path d="m7 10 5-5 5 5"/>
+                                <path d="M12 5v12"/>
+                            </svg>
+                            <span class="dz-title" id="dzTitle">Drop an image or click to browse</span>
+                            <span class="dz-sub">PNG, JPG, WEBP up to 10MB — used for forensic deepfake &amp; provenance checks</span>
+                            <input type="file" id="imageInput" name="file" accept="image/*" hidden>
+                        </label>
+                        <div class="dz-preview" id="dzPreview" hidden>
+                            <img id="dzPreviewImg" alt="Selected preview"/>
+                            <span class="dz-preview-meta" id="dzPreviewMeta"></span>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="reset" class="btn-ghost" id="clearImageBtn">Clear</button>
+                        <button type="submit" class="btn-primary" id="analyzeImageBtn">
+                            <span id="analyzeImageBtnLabel">Analyze Image</span>
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="image-error" id="imageError" hidden></div>
+                </form>
+            </div>
+        </section>
+
+        {% if result %}
+        <section class="result">
+            <div class="verdict-banner verdict-{{ result.verdict_class }}">
+                <div class="verdict-left">
+                    <span class="verdict-text">{{ result.verdict }}</span>
+                    <span class="verdict-sub">Trust score · {{ result.trust }}/100</span>
+                </div>
+                <div class="verdict-score" aria-hidden="true">
+                    <svg viewBox="0 0 36 36" width="56" height="56">
+                        <path class="ring-bg" d="M18 2a16 16 0 1 1 0 32 16 16 0 0 1 0-32" fill="none" stroke-width="3"/>
+                        <path class="ring-fg ring-{{ result.verdict_class }}" d="M18 2a16 16 0 1 1 0 32 16 16 0 0 1 0-32" fill="none" stroke-width="3" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="{{ 100 - (result.trust * 1.0) }}"/>
+                    </svg>
+                    <span class="ring-value">{{ result.trust }}</span>
+                </div>
+            </div>
+
+            <div class="result-grid">
+                <div class="stat-card">
+                    <span class="stat-label">AI Style Analysis</span>
+                    <span class="stat-value">{{ result.label }}</span>
+                    <span class="stat-sub">{{ result.confidence }}% confidence &middot; {{ result.real_confidence }}% probability real</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Similarity to Best Match</span>
+                    <span class="stat-value">{{ result.similarity }}%</span>
+                    {% if result.best_article %}
+                    <span class="stat-sub"><a href="{{ result.best_article.url }}" target="_blank" rel="noopener">{{ result.best_article.title }}</a> &mdash; {{ result.best_article.source }}</span>
+                    {% else %}
+                    <span class="stat-sub">No comparable article found</span>
+                    {% endif %}
+                </div>
+            </div>
+
+            <h2 class="section-title">Matched trusted sources</h2>
+            {% if result.matched_sources %}
+            <ul class="articles">
+                {% for m in result.matched_sources %}
+                <li>
+                    <a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.title }}</a>
+                    <span class="source">{{ m.source }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="empty">None of the retrieved articles came from a trusted source.</p>
+            {% endif %}
+
+            <h2 class="section-title">Related articles</h2>
+            {% if result.articles %}
+            <ul class="articles">
+                {% for article in result.articles %}
+                <li>
+                    <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+                    <span class="source">{{ article.source }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="empty">No related articles found.</p>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {% if image_result %}
+        <section class="result image-result" id="imageResult">
+            <div class="verdict-banner verdict-{{ image_result.verdict_class }}">
+                <div class="verdict-left">
+                    <span class="verdict-text">
+                        <span class="verdict-badge verdict-badge-{{ image_result.verdict_class }}">{{ image_result.verdict }}</span>
+                    </span>
+                    <span class="verdict-sub">Forensic image analysis · confidence {{ image_result.confidence_pct }}%</span>
+                </div>
+                <div class="verdict-score" aria-hidden="true">
+                    <svg viewBox="0 0 36 36" width="56" height="56">
+                        <path class="ring-bg" d="M18 2a16 16 0 1 1 0 32 16 16 0 0 1 0-32" fill="none" stroke-width="3"/>
+                        <path class="ring-fg ring-{{ image_result.verdict_class }}" d="M18 2a16 16 0 1 1 0 32 16 16 0 0 1 0-32" fill="none" stroke-width="3" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="{{ 100 - image_result.confidence_pct }}"/>
+                    </svg>
+                    <span class="ring-value">{{ image_result.confidence_pct }}%</span>
+                </div>
+            </div>
+
+            <div class="result-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Verdict</span>
+                    <span class="stat-value">
+                        <span class="risk-badge risk-{{ image_result.verdict_class }}">{{ image_result.verdict }}</span>
+                    </span>
+                    <span class="stat-sub">Risk tier: <strong>{{ image_result.risk }}</strong></span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Confidence</span>
+                    <span class="stat-value">{{ image_result.confidence_pct }}%</span>
+                    <span class="stat-sub">Model probability in predicted class</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Inference Time</span>
+                    <span class="stat-value">{{ image_result.inference_time_ms }} ms</span>
+                    <span class="stat-sub">Including Grad-CAM generation</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Model</span>
+                    <span class="stat-value model-name">{{ image_result.model_version }}</span>
+                    <span class="stat-sub">EfficientNet-B4 backbone &middot; 380&times;380 input</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Forensic explanation</h2>
+            <p class="image-explanation">{{ image_result.explanation }}</p>
+
+            <h2 class="section-title">Grad-CAM suspicious-region analysis</h2>
+            <div class="heatmap-grid">
+                <div class="heatmap-tile">
+                    <div class="heatmap-tile-frame">
+                        <img src="{{ image_result.heatmap_url }}" alt="Grad-CAM heatmap overlay highlighting suspicious regions" loading="lazy"/>
+                    </div>
+                    <span class="heatmap-tile-label">Suspicious Regions Heatmap</span>
+                </div>
+            </div>
+            <p class="heatmap-help">
+                Warm regions (red/yellow) indicate pixel neighborhoods that pushed the EfficientNet-B4
+                classifier toward its prediction. The model inspected compression artefacts, lighting
+                inconsistencies, and provenance cues in the highlighted areas.
+            </p>
+            <a class="btn-ghost heatmap-download" href="{{ image_result.heatmap_url }}" target="_blank" rel="noopener" download>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <path d="m7 10 5 5 5-5"/>
+                    <path d="M12 15V3"/>
+                </svg>
+                <span>Download full-resolution heatmap</span>
+            </a>
+        </section>
+        {% endif %}
+
+        {% if image_error %}
+        <section class="result">
+            <div class="verdict-banner verdict-bad">
+                <div class="verdict-left">
+                    <span class="verdict-text">Image analysis failed</span>
+                    <span class="verdict-sub">{{ image_error }}</span>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </main>
+
+    <script>
+        (function () {
+            const root = document.documentElement;
+            const themeBtn = document.getElementById('themeToggle');
+            const stored = localStorage.getItem('aiverify-theme');
+            if (stored) root.setAttribute('data-theme', stored);
+
+            themeBtn.addEventListener('click', () => {
+                const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem('aiverify-theme', next);
+            });
+
+            // Tabs
+            const tabs = document.querySelectorAll('.tab');
+            const panels = {
+                text: document.getElementById('panel-text'),
+                image: document.getElementById('panel-image'),
+            };
+
+            // If an image result is present, default-open the image tab so the
+            // result panel is visible without an extra click.
+            const hasImageResult = {{ 'true' if image_result else 'false' }};
+            const hasTextResult = {{ 'true' if result else 'false' }};
+            let initialTab = 'text';
+            if (hasImageResult) initialTab = 'image';
+
+            const activateTab = (key) => {
+                tabs.forEach(t => {
+                    const isActive = t.dataset.tab === key;
+                    t.classList.toggle('active', isActive);
+                    t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                });
+                Object.entries(panels).forEach(([k, el]) => {
+                    const isActive = k === key;
+                    el.classList.toggle('active', isActive);
+                    el.hidden = !isActive;
+                });
+                if (key === 'image' && hasImageResult) {
+                    const target = document.getElementById('imageResult');
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            };
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+            });
+            activateTab(initialTab);
+
+            // Character counter
+            const ta = document.getElementById('newsInput');
+            const counter = document.getElementById('charCount');
+            const updateCount = () => {
+                const v = ta.value || '';
+                counter.textContent = `${v.length}/5000`;
+            };
+            ta.addEventListener('input', updateCount);
+            updateCount();
+
+            // Text clear
+            document.getElementById('clearBtn').addEventListener('click', () => {
+                ta.value = '';
+                updateCount();
+                ta.focus();
+            });
+
+            // Image dropzone + preview
+            const dropzone = document.getElementById('dropzone');
+            const fileInput = document.getElementById('imageInput');
+            const dzTitle = document.getElementById('dzTitle');
+            const dzPreview = document.getElementById('dzPreview');
+            const dzPreviewImg = document.getElementById('dzPreviewImg');
+            const dzPreviewMeta = document.getElementById('dzPreviewMeta');
+            const imageError = document.getElementById('imageError');
+            const analyzeBtn = document.getElementById('analyzeImageBtn');
+            const analyzeBtnLabel = document.getElementById('analyzeImageBtnLabel');
+            const imageForm = document.getElementById('imageForm');
+            const originalDzTitle = dzTitle.textContent;
+            let previewObjectUrl = null;
+
+            const formatBytes = (n) => {
+                if (n < 1024) return `${n} B`;
+                if (n < 1024 * 1024) return `${(n / 1024).toFixed(1)} KB`;
+                return `${(n / 1024 / 1024).toFixed(2)} MB`;
+            };
+
+            const showError = (msg) => {
+                if (!msg) {
+                    imageError.hidden = true;
+                    imageError.textContent = '';
+                    return;
+                }
+                imageError.textContent = msg;
+                imageError.hidden = false;
+            };
+
+            const showFile = (file) => {
+                showError('');
+                if (!file) return;
+                if (!file.type.startsWith('image/')) {
+                    showError('Please choose a PNG, JPG, or WEBP image.');
+                    return;
+                }
+                dzTitle.textContent = `Selected: ${file.name}`;
+                if (previewObjectUrl) URL.revokeObjectURL(previewObjectUrl);
+                previewObjectUrl = URL.createObjectURL(file);
+                dzPreviewImg.src = previewObjectUrl;
+                dzPreviewMeta.textContent = `${file.type.replace('image/', '').toUpperCase()} · ${formatBytes(file.size)}`;
+                dzPreview.hidden = false;
+            };
+
+            fileInput.addEventListener('change', e => showFile(e.target.files[0]));
+            ['dragenter', 'dragover'].forEach(ev =>
+                dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.add('drag'); }));
+            ['dragleave', 'drop'].forEach(ev =>
+                dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.remove('drag'); }));
+            dropzone.addEventListener('drop', e => {
+                const file = e.dataTransfer.files[0];
+                if (file) {
+                    const dt = new DataTransfer();
+                    dt.items.add(file);
+                    fileInput.files = dt.files;
+                    showFile(file);
+                }
+            });
+
+            imageForm.addEventListener('submit', e => {
+                if (!fileInput.files.length) {
+                    e.preventDefault();
+                    dzTitle.textContent = 'Please choose an image first';
+                    showError('Please choose an image before analyzing.');
+                    return;
+                }
+                analyzeBtn.disabled = true;
+                analyzeBtnLabel.textContent = 'Analyzing…';
+            });
+
+            document.getElementById('clearImageBtn').addEventListener('click', () => {
+                fileInput.value = '';
+                dzTitle.textContent = originalDzTitle;
+                dzPreview.hidden = true;
+                dzPreviewImg.removeAttribute('src');
+                dzPreviewMeta.textContent = '';
+                if (previewObjectUrl) {
+                    URL.revokeObjectURL(previewObjectUrl);
+                    previewObjectUrl = null;
+                }
+                showError('');
+                analyzeBtn.disabled = false;
+                analyzeBtnLabel.textContent = 'Analyze Image';
+            });
+        })();
+    </script>
+</body>
+</html>

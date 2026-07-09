@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, DistilBertForSequenceClassification
 
-MODEL_PATH = "saved_models/text_model"
+MODEL_PATH = "saved_models/text_model_v4"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 
@@ -28,10 +28,11 @@ def predict_news(news):
     probabilities = torch.softmax(outputs.logits, dim=1)
 
     confidence = probabilities[0][prediction].item() * 100
+    real_confidence = probabilities[0][1].item() * 100
 
     if prediction == 1:
         label = "REAL NEWS ✅"
     else:
         label = "FAKE NEWS ❌"
 
-    return label, round(confidence, 2)
+    return label, round(confidence, 2), round(real_confidence, 2)

@@ -1,0 +1,58 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "AIVERIFY" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img [ref=e6]
+      - generic [ref=e9]: AIVERIFY
+    - navigation "Primary" [ref=e10]:
+      - link "Home" [ref=e11] [cursor=pointer]:
+        - /url: /
+      - link "Features" [ref=e12] [cursor=pointer]:
+        - /url: "#features"
+      - link "Detection" [ref=e13] [cursor=pointer]:
+        - /url: "#detection"
+      - link "How It Works" [ref=e14] [cursor=pointer]:
+        - /url: "#how"
+      - link "AI Technology" [ref=e15] [cursor=pointer]:
+        - /url: "#tech"
+      - link "Research" [ref=e16] [cursor=pointer]:
+        - /url: "#research"
+      - link "FAQ" [ref=e17] [cursor=pointer]:
+        - /url: "#faq"
+      - link "Contact" [ref=e18] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e19]:
+      - button "Toggle theme" [ref=e20] [cursor=pointer]:
+        - img [ref=e21]
+      - link "GitHub" [ref=e24] [cursor=pointer]:
+        - /url: https://github.com/
+        - img [ref=e25]
+      - link "Get Started" [ref=e27] [cursor=pointer]:
+        - /url: "#detection"
+        - generic [ref=e28]: Get Started
+        - img [ref=e29]
+  - main [ref=e31]:
+    - generic [ref=e32]:
+      - paragraph [ref=e33]: FORENSIC ANALYZER
+      - heading "Interactive AI Analysis Lab" [level=1] [ref=e34]
+      - paragraph [ref=e35]: Paste a target article or upload a media file. Our neural pipeline runs multi-source verification, semantic matching, and credibility scoring in real time.
+    - region "Detection tools" [ref=e36]:
+      - tablist [ref=e37]:
+        - tab "Text Detection" [selected] [ref=e38] [cursor=pointer]:
+          - img [ref=e39]
+          - generic [ref=e42]: Text Detection
+        - tab "Image Detection" [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+          - generic [ref=e48]: Image Detection
+      - tabpanel [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - textbox "Paste a news article, social media post, or sensitive statement here to audit (min 10 characters)..." [ref=e52]
+            - generic [ref=e53]:
+              - generic [ref=e54]: 0/5000
+              - generic [ref=e55]: Characters
+          - generic [ref=e56]:
+            - button "Clear" [ref=e57] [cursor=pointer]
+            - button "Analyze Text" [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Analyze Text
+              - img [ref=e60]

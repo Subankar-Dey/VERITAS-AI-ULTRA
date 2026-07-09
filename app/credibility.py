@@ -15,7 +15,13 @@ TRUSTED_SOURCES = {
 }
 
 
-def calculate_trust(bert_confidence, similarity, articles):
+def calculate_trust(real_confidence, similarity, articles):
+    """
+    real_confidence: model's probability (0-100) that the input is REAL news,
+    regardless of which label it predicted. Using the raw "confidence in
+    whatever was predicted" here would push FAKE predictions toward a
+    higher trust score the more confidently fake they are, which is wrong.
+    """
 
     if len(articles) == 0:
         return 15, "❌ No Supporting Evidence", []
@@ -29,7 +35,11 @@ def calculate_trust(bert_confidence, similarity, articles):
         source = article["source"]
 
         if source in TRUSTED_SOURCES:
-            matched.append(source)
+            matched.append({
+                "source": source,
+                "title": article["title"],
+                "url": article["url"],
+            })
             scores.append(TRUSTED_SOURCES[source])
 
     if scores:
@@ -38,7 +48,7 @@ def calculate_trust(bert_confidence, similarity, articles):
         source_score = 40
 
     trust = (
-        bert_confidence * 0.25 +
+        real_confidence * 0.25 +
         similarity * 0.45 +
         source_score * 0.30
     )
